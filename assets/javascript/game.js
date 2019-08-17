@@ -75,13 +75,13 @@ function checkGuess(array, element) {
 function roundOver(){                               
     if (answerArray.toString() == wordLetters.toString()) {
         wins++;
-        alert("England win! The correct word was " + word);
+        alert("You win! The correct word was " + word);
         winsText.textContent = "Wins: " + wins;
         startRound();
     }
     else if (remainingLetters == 0) {
         losses++;
-        alert("England lose! Sorry, the correct word was " + word);
+        alert("You lose! Sorry, the correct word was " + word);
         lossesText.textContent = "Losses: " + losses;
         startRound();
     }
